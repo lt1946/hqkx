@@ -33,8 +33,8 @@ var hqkx={
                                 // console.log(href+"\n");
                                result.push({value:value,url:href}); 
                         });
-                         res.setEncoding('gbk');
-                        // console.log(JSON.stringify(result))
+                         //res.setEncoding('gbk');
+                         console.log(JSON.stringify(result))
                         // res.writeHeader(200,{"Content-Type":"text/plain; charset=gbk"})
                         res.send(JSON.stringify(result));
                 });
