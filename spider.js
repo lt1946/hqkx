@@ -30,10 +30,10 @@ var hqkx={
                         title.each(function(){
                                 var href=$(this).attr("href");
                                 var value=$(this).html();
-                                var utf8_to_gbk_iconv = new Iconv('UTF-8//TRANSLIT//IGNORE', 'GBK');
-                                var gbk_buffer = utf8_to_gbk_iconv.convert(value);
-                                value=gbk_buffer;
-                                console.log(gbk_buffer.toString());
+                                var gbk_to_utf8_iconv = new Iconv('GBK', 'UTF-8//TRANSLIT//IGNORE');
+                                var utf8_buffer = gbk_to_utf8_iconv.convert(value);
+                                value=utf8_buffer.toString();
+                                console.log(utf8_buffer.toString());
                                 result.push({value:value,url:href}); 
                         });
                          //res.setEncoding('gbk');
