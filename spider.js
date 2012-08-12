@@ -30,7 +30,7 @@ var hqkx={
                         title.each(function(){
                                 var href=$(this).attr("href");
                                 var value=$(this).html();
-                                var gbk_to_utf8_iconv = new Iconv('UTF-8', 'GBK//TRANSLIT//IGNORE');
+                                var gbk_to_utf8_iconv = new Iconv('UTF-8', 'GBK');
                                 var utf8_buffer = gbk_to_utf8_iconv.convert(value);
                                 value=utf8_buffer.toString();
                                 console.log(utf8_buffer.toString());
