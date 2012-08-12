@@ -1,6 +1,7 @@
 var jsdom = require('jsdom');
 var request = require('request');
 var jquery = 'http://code.jquery.com/jquery-1.7.2.min.js';
+var Iconv = require('iconv').Iconv;
 
 exports.site=function (req, res, next) {
           console.log(req.params);
@@ -29,9 +30,11 @@ var hqkx={
                         title.each(function(){
                                 var href=$(this).attr("href");
                                 var value=$(this).html();
-                                // console.log(value+"\n");
-                                // console.log(href+"\n");
-                               result.push({value:value,url:href}); 
+                                var gbk_to_utf8_iconv = new Iconv('GBK', 'UTF-8//TRANSLIT//IGNORE');
+                                var utf8_buffer = gbk_to_utf8_iconv.convert(value);
+                                value=utf8_buffer;
+                                console.log(utf8_buffer.toString());
+                                result.push({value:value,url:href}); 
                         });
                          //res.setEncoding('gbk');
                          console.log(JSON.stringify(result))
