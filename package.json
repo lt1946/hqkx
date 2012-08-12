@@ -1,0 +1,12 @@
+{
+    "name" : "hqkx",
+    "version":"0.0.1",
+    "main" : "./app.js",
+     "dependencies":{
+        "cheerio":">=0.9.1",
+        "restify":">=1.4.4",
+    	"request":">=2.9.203",
+        "jsdom":">=0.2.15"
+      }
+}
+
