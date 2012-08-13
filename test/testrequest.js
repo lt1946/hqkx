@@ -9,13 +9,12 @@ var options = {
   method: 'GET'
 };
 
-var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';  
+/*var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';
 http.get(url, function(res) {
   console.log("Got response: " + res.statusCode);
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
-});
-/*
+});*/
         var req = http.request(options, function(res) {
             if(res.statusCode==200){
                 var encode=res.headers["content-type"].split("=")[1];
@@ -43,4 +42,3 @@ http.get(url, function(res) {
         req.write('data\n');
         req.write('data\n');
         req.end();
-*/
