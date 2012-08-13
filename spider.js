@@ -31,7 +31,7 @@ var hqkx={
                         title.each(function(){
                                 var href=$(this).attr("href");
                                 var value=$(this).html();
-                                value=iconv.decode(value,"gbk");
+                                value=iconv.decode(value,"UTF-8");
                                 // var gbk_to_iso_iconv = new Iconv('GBK', 'ISO-8859-1//TRANSLIT//IGNORE');
                                 // var iso_buffer = gbk_to_iso_iconv.convert(value);
                                 // value=iso_buffer.toString();
