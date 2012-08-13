@@ -1,7 +1,8 @@
 var jsdom = require('jsdom');
 var request = require('request');
 var jquery = 'http://code.jquery.com/jquery-1.7.2.min.js';
-var Iconv = require('iconv').Iconv;
+// var Iconv = require('iconv').Iconv;
+var iconv = require('iconv-lite');
 
 exports.site=function (req, res, next) {
           console.log(req.params);
@@ -30,13 +31,14 @@ var hqkx={
                         title.each(function(){
                                 var href=$(this).attr("href");
                                 var value=$(this).html();
-                                var gbk_to_iso_iconv = new Iconv('GBK', 'ISO-8859-1//TRANSLIT//IGNORE');
-                                var iso_buffer = gbk_to_iso_iconv.convert(value);
-                                value=iso_buffer.toString();
-
-                                var iso_to_utf8_iconv = new Iconv('ISO-8859-1', 'utf8//TRANSLIT//IGNORE');
-                                var utf8_buffer = iso_to_utf8_iconv.convert(value);
-                                value=utf8_buffer.toString();
+                                value=iconv.decode(value,"gbk");
+                                // var gbk_to_iso_iconv = new Iconv('GBK', 'ISO-8859-1//TRANSLIT//IGNORE');
+                                // var iso_buffer = gbk_to_iso_iconv.convert(value);
+                                // value=iso_buffer.toString();
+// 
+                                // var iso_to_utf8_iconv = new Iconv('ISO-8859-1', 'utf8//TRANSLIT//IGNORE');
+                                // var utf8_buffer = iso_to_utf8_iconv.convert(value);
+                                // value=utf8_buffer.toString();
                                 
                                 console.log(value);
                                 result.push({value:value,url:href}); 
