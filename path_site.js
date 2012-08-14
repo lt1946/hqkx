@@ -1,6 +1,7 @@
 var cheerio = require('cheerio');
 var request = require('request');
 var iconv = require('iconv-lite');
+var http=require("http");
 
 exports.site=function (req, res, next) {
           console.log(req.params);
@@ -10,6 +11,12 @@ exports.site=function (req, res, next) {
           }
           return next();
        };
+var options = {
+  host: 'www.huanqiukexue.com',
+  port: 80,
+  path: '/html/newqqkj/newwl/list_87_3.html',
+  method: 'GET'
+};
 var hqkx={
         init:function(req,res,next){
                 switch(req.params.type){
@@ -19,9 +26,46 @@ var hqkx={
                 }
           return next();
         },
-        type:function(req,res,next){
-                 res.on('data', function (chunk) {
-                    var $ = cheerio.load(iconv.decode(chunk,encode)) ;
+        type: function(request,response,next){
+            var req = http.request(options, function(res) {
+                if(res.statusCode==200){
+                    var encode=res.headers["content-type"].split("=")[1];
+                    var result = [];
+                    res.on('data', function (chunk) {
+                        var $ = cheerio.load(encode.indexOf('utf')>=0?chunk:iconv.decode(chunk,encode)) ;
+                        var title=$(".title");
+                        title.each(function(){
+                            var href=$(this).attr("href");
+                            var value=  $(this).text();
+                            console.log(href+"\n");
+                            console.log(value+"\n");
+                            result.push({value:value,url:href});
+                        })
+                    });
+                    res.on("end",function(){
+                        response.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                        response.write(JSON.stringify(result));
+                        response.end();
+                    })
+                }
+                //  console.log('STATUS: ' + res.statusCode);
+                //  console.log('HEADERS: ' + JSON.stringify(res.headers));
+                //  console.log('encoding:'+res.headers["content-type"].split("=")[1])
+            });
+            req.on('error', function(e) {
+                console.log('problem with request: ' + e.message);
+            });
+            // write data to request body
+            req.write('data\n');
+            req.write('data\n');
+            req.end();
+            /*function(req,res,next){
+                var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';
+                request(url, function(error, response, body) {
+                        console.log(iconv.decode(body,"gb2312"))
+                 // var $ = cheerio.load(body) ;
+                 // res.on('data', function (chunk) {
+                    var $ = cheerio.load(iconv.decode(body,"gb2312")) ;
                     var title=$(".title");
                     var result = [];
                     title.each(function(){
@@ -33,7 +77,7 @@ var hqkx={
                     })
                     console.log(JSON.stringify(result));
                     res.send(JSON.stringify(result));
-                });
+                });*/
 /*
                 var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';
                 request(url, function(error, response, body) {
@@ -52,8 +96,6 @@ var hqkx={
                         console.log(JSON.stringify(result));
                         res.send(JSON.stringify(result));
                 });*/
-
-                return next();
         },
         test:function(req,res,next){
                 var url='http://www.jqmapi.com/componts/toolbar/Header%20.html';

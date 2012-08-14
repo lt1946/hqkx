@@ -1,5 +1,5 @@
-var spider = require('./spider');
-// var spider = require('./site');
+// var spider = require('./path_spider');
+var spider = require('./path_site');
 
 exports.init=function(server){
         server.get('/echo/:name', function (req, res, next) {
