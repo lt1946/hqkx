@@ -48,54 +48,11 @@ var hqkx={
                         response.end();
                     })
                 }
-                //  console.log('STATUS: ' + res.statusCode);
-                //  console.log('HEADERS: ' + JSON.stringify(res.headers));
-                //  console.log('encoding:'+res.headers["content-type"].split("=")[1])
             });
             req.on('error', function(e) {
                 console.log('problem with request: ' + e.message);
             });
-            // write data to request body
-            req.write('data\n');
-            req.write('data\n');
             req.end();
-            /*function(req,res,next){
-                var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';
-                request(url, function(error, response, body) {
-                        console.log(iconv.decode(body,"gb2312"))
-                 // var $ = cheerio.load(body) ;
-                 // res.on('data', function (chunk) {
-                    var $ = cheerio.load(iconv.decode(body,"gb2312")) ;
-                    var title=$(".title");
-                    var result = [];
-                    title.each(function(){
-                        var href=$(this).attr("href");
-                        var value=  $(this).text();
-                        console.log(href+"\n");
-                        console.log(value+"\n");
-                        result.push({value:value,url:href}); 
-                    })
-                    console.log(JSON.stringify(result));
-                    res.send(JSON.stringify(result));
-                });*/
-/*
-                var url='http://www.huanqiukexue.com/html/newqqkj/newwl/list_87_3.html';
-                request(url, function(error, response, body) {
-                        var $ = cheerio.load(iconv.decode(body,"gb2312")) ;
-                        var title=$(".title");
-                        var result = [];
-                        title.each(function(){
-                                var href=$(this).attr("href");
-                                var value=  $(this).html();
-                                console.log(href+"\n");
-                                // value=iconv.decode(value,"gb2312");
-                                console.log(value+"\n");
-                                
-                               result.push({value:value,url:href}); 
-                        });
-                        console.log(JSON.stringify(result));
-                        res.send(JSON.stringify(result));
-                });*/
         },
         test:function(req,res,next){
                 var url='http://www.jqmapi.com/componts/toolbar/Header%20.html';
