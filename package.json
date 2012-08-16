@@ -1,7 +1,7 @@
 {
     "name" : "hqkx",
     "version":"0.0.1",
-    "main" : "./app.js",
+    "main" : "./mongo.js",
      "dependencies":{
         "cheerio":">=0.9.1",
         "restify":">=1.4.4",

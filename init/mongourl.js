@@ -7,6 +7,8 @@
  */
 if(process.env.VCAP_SERVICES){
     var env = JSON.parse(process.env.VCAP_SERVICES);
+    console.log(JSON.stringify(env['mongodb-1.8']))
+    console.log(env['mongodb-1.8'].length)
     var mongo = env['mongodb-1.8'][0]['credentials'];
 }
 else{
