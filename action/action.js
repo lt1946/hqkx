@@ -2,7 +2,26 @@ var cheerio = require('cheerio');
 var request = require('request');
 var iconv = require('iconv-lite');
 var http=require("http");
+var mongourl=require('../init/mongourl');
+var mongodb = require('mongodb');
 
+
+/** 测试mongodb **/
+exports.mongodbtest=function(req, res, next){
+    console.log(mongourl)
+    mongodb.connect(mongourl, function(err, conn){
+        conn.collection('ips', function(err, coll){
+            object_to_insert = { 'ip': req.connection.remoteAddress, 'ts': new Date() };
+            coll.insert( object_to_insert, {safe:true}, function(err){
+                res.writeHead(200, {'Content-Type': 'text/plain'});
+                res.write(JSON.stringify(object_to_insert));
+                res.end('\n');
+            });
+        });
+    });
+}
+
+/** 抓取站点 **/
 exports.site=function (req, res, next) {
           console.log(req.params);
           switch(req.params.site){
