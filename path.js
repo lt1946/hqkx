@@ -8,5 +8,4 @@ exports.init=function(server){
         });
         server.get('/spider/:site/:type',action.site);
         server.get('/mongodb/test',action.mongodbtest);
-
 }

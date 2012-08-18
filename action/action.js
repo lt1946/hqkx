@@ -13,12 +13,13 @@ exports.mongodbtest=function(req, res, next){
         conn.collection('ips', function(err, coll){
             object_to_insert = { 'ip': req.connection.remoteAddress, 'ts': new Date() };
             coll.insert( object_to_insert, {safe:true}, function(err){
-                res.writeHead(200, {'Content-Type': 'text/plain'});
+                res.setHeader("Content-Type", "text/plain; charset=UTF-8");
                 res.write(JSON.stringify(object_to_insert));
                 res.end('\n');
             });
         });
     });
+    return next();
 }
 
 /** 抓取站点 **/

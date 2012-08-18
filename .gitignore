@@ -1,3 +1,7 @@
 *.swp
-*.sh
 *.log
+*.me
+*.bak
+*.swp
+*.yml
+master
