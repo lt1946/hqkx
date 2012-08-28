@@ -104,7 +104,8 @@ var porn={
                         console.log(href+"\n");
                         console.log(title+"\n");
                         console.log(imgsrc+"\n");
-                        result.push({count:count++,title:title,url:'http://localhost:3003/spider/porn/getrealgfporn/'+(href+"").replace("http://www.realgfporn.com","").replace("/","__").replace("/","__"),imgsrc:imgsrc});
+                        if(count<5)
+                                result.push({count:count++,title:title,url:'http://localhost:3003/spider/porn/getrealgfporn/'+(href+"").replace("http://www.realgfporn.com","").replace("/","__").replace("/","__"),imgsrc:imgsrc});
                     })
                 });
                 res.on("end",function(){
