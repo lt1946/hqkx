@@ -6,6 +6,7 @@ exports.init=function(server){
       res.send(req.params);
       return next();
     });
+    server.get('/spider/:site/:type',action.site);
     server.get('/spider/:site/:type/:page',action.site);
     server.get('/spider/history',action.history);
     server.get('/mongodb/test',action.mongodbtest);
