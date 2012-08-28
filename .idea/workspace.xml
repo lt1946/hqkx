@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="" />
+    <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/spider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/action.js" afterPath="$PROJECT_DIR$/action/action.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path.js" afterPath="$PROJECT_DIR$/path.js" />
+    </list>
     <ignored path="hqkx.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,16 +35,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="action.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/action/action.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="58" selection-start="763" selection-end="763" vertical-scroll-proportion="-0.77208483">
+            <state line="1" column="36" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +44,47 @@
       <file leaf-file-name="path.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="47" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+            <state line="8" column="34" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/action.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="42" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#4578#7025#0" expanded="false" />
+                <element signature="e#4958#6419#0" expanded="false" />
+                <element signature="e#6456#7023#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="58" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongourl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/init/mongourl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="57" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/history.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="73" selection-start="144" selection-end="144" vertical-scroll-proportion="0.25344354">
               <folding />
             </state>
           </provider>
@@ -65,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/site.js" />
         <option value="$PROJECT_DIR$/test/chinese.js" />
         <option value="$PROJECT_DIR$/test/testfs.js" />
@@ -75,11 +112,13 @@
         <option value="$PROJECT_DIR$/test/testrequest2.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/path_site.js" />
-        <option value="$PROJECT_DIR$/path.js" />
         <option value="$PROJECT_DIR$/init/mongourl.js" />
         <option value="$PROJECT_DIR$/mongo.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/action/spider.js" />
+        <option value="$PROJECT_DIR$/path.js" />
         <option value="$PROJECT_DIR$/action/action.js" />
+        <option value="$PROJECT_DIR$/www/history.html" />
       </list>
     </option>
   </component>
@@ -103,7 +142,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="All" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -143,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -172,6 +211,18 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="hqkx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -189,15 +240,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="128" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="921" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="918" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="921" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="125" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="126" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -209,23 +261,7 @@
       <recent name="D:\nodejs\project\rest\hqkx\sh" />
     </key>
   </component>
-  <component name="RunManager" selected="Node JS.testrequest2.js">
-    <configuration default="false" name="testfs.js" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
-      <setting name="configLocationType" value="JS_FILE" />
-      <setting name="configType" value="GENERATED" />
-      <setting name="jsFile" value="$PROJECT_DIR$/test/testfs.js" />
-      <setting name="serverType" value="INTERNAL" />
-      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
-      <RunnerSettings RunnerId="JstdCoverageProgramRunner" />
-      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
-      <ConfigurationWrapper RunnerId="JstdCoverageProgramRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node JS" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
-      <RunnerSettings RunnerId="NodeJS.run" />
-      <ConfigurationWrapper RunnerId="NodeJS.run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node JS.app.js">
     <configuration default="false" name="testrequest.js" type="NodeJSConfigurationType" factoryName="Node JS" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="$PROJECT_DIR$/test/testrequest.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
@@ -238,6 +274,18 @@
     </configuration>
     <configuration default="false" name="testrequest2.js" type="NodeJSConfigurationType" factoryName="Node JS" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="$PROJECT_DIR$/test/testrequest2.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
       <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="action.js" type="NodeJSConfigurationType" factoryName="Node JS" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="$PROJECT_DIR$/action/action.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node JS" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
@@ -258,11 +306,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.testfs.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node JS.test.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node JS.testrequest.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node JS.testrequest3.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node JS.testrequest2.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node JS.testrequest.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node JS.testrequest3.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node JS.testrequest2.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node JS.action.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node JS.app.js" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -295,21 +343,41 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39864865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16616085" sideWeight="0.17428088" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16616085" sideWeight="0.77326566" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16616085" sideWeight="0.41216215" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16616085" sideWeight="0.4037162" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16616085" sideWeight="0.7111486" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.77326566" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22673436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28885135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -377,16 +445,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/testfs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/chinese.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="21" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
@@ -400,11 +458,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/cheerio/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="41" selection-start="0" selection-end="939" vertical-scroll-proportion="-1.2093596" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="940" column="0" selection-start="14193" selection-end="14199" vertical-scroll-proportion="0.81206495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testrequestOK.js">
@@ -422,34 +475,68 @@
         <state line="33" column="24" selection-start="399" selection-end="1275" vertical-scroll-proportion="0.6798144" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/init/mongourl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="74" selection-start="540" selection-end="540" vertical-scroll-proportion="0.5282686" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="32" selection-start="71" selection-end="72" vertical-scroll-proportion="0.12190813" />
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="940" column="0" selection-start="0" selection-end="65849" vertical-scroll-proportion="0.35380834" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/spider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="188" selection-end="189" vertical-scroll-proportion="0.31944445" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/library/node_embedded_symbols.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="4" selection-start="1907" selection-end="1916" vertical-scroll-proportion="0.35380834" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init/mongourl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="57" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mongo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2557" selection-end="2557" vertical-scroll-proportion="1.4063604" />
+        <state line="14" column="58" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" />
+        <state line="1" column="36" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/path.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" />
+        <state line="8" column="34" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/action/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="58" selection-start="763" selection-end="763" vertical-scroll-proportion="-0.77208483">
+        <state line="82" column="42" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#4578#7025#0" expanded="false" />
+            <element signature="e#4958#6419#0" expanded="false" />
+            <element signature="e#6456#7023#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="73" selection-start="144" selection-end="144" vertical-scroll-proportion="0.25344354">
           <folding />
         </state>
       </provider>
