@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/spider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/action.js" afterPath="$PROJECT_DIR$/action/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path.js" afterPath="$PROJECT_DIR$/path.js" />
-    </list>
+    <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="" />
     <ignored path="hqkx.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,7 +77,7 @@
       <file leaf-file-name="history.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="73" selection-start="144" selection-end="144" vertical-scroll-proportion="0.25344354">
+            <state line="12" column="57" selection-start="355" selection-end="355" vertical-scroll-proportion="0.76033056">
               <folding />
             </state>
           </provider>
@@ -364,7 +357,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -536,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="73" selection-start="144" selection-end="144" vertical-scroll-proportion="0.25344354">
+        <state line="12" column="57" selection-start="355" selection-end="355" vertical-scroll-proportion="0.76033056">
           <folding />
         </state>
       </provider>
