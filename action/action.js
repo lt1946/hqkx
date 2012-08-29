@@ -2,28 +2,18 @@ var cheerio = require('cheerio');
 var request = require('request');
 var iconv = require('iconv-lite');
 var http = require("http");
-var mongourl = require('../init/mongourl');
+var mongourlconfig = require('../init/mongourlconfig');
+var mongourl = mongourlconfig.mongourl;
+var mongolab1url = mongourlconfig.mongolab1url;
 var mongodb = require('mongodb');
 var fs=require("fs");
 
-/** 测试mongodb **/
-exports.mongodbtest=function(req, res, next){
-    console.log(mongourl)
-    mongodb.connect(mongourl, function(err, conn){
-        conn.collection('ips', function(err, coll){
-            object_to_insert = { 'ip': req.connection.remoteAddress, 'ts': new Date() };
-            coll.insert( object_to_insert, {safe:true}, function(err){
-                res.setHeader("Content-Type", "text/plain; charset=UTF-8");
-                res.write(JSON.stringify(object_to_insert));
-                res.end('\n');
-            });
-        });
-    });
-    return next();
-}
 exports.mongodb=function(req,res,next){                 //switch type
   switch(req.params.type){
+          case 'test': mongodbtype.test(req,res,next);break;
           case 'get': mongodbtype.get(req,res,next);break;
+          case 'get_mongolab1url': mongodbtype.get_mongolab1url(req,res,next);break;
+          
           default : res.send('request type name is:'+req.params.type);
   }
   return next();
@@ -41,6 +31,32 @@ var mongodbtype={
                                   // // Let's close the db
                                   // client.close();
                         });
+                });
+            });
+            return next();
+        },get_mongolab1url:function(req, res, next){
+            console.log(mongolab1url)
+            mongodb.connect(mongolab1url, function(err, conn){
+                conn.collection('ips', function(err, coll){
+                    object_to_insert = { 'ip': req.connection.remoteAddress, 'ts': new Date() };
+                    coll.insert( object_to_insert, {safe:true}, function(err){
+                        res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                        res.write(JSON.stringify(object_to_insert));
+                        res.end('\n');
+                    });
+                });
+            });
+            return next();
+        },test:function(req, res, next){          /** 测试mongodb **/               
+            console.log(mongourl)
+            mongodb.connect(mongourl, function(err, conn){
+                conn.collection('ips', function(err, coll){
+                    object_to_insert = { 'ip': req.connection.remoteAddress, 'ts': new Date() };
+                    coll.insert( object_to_insert, {safe:true}, function(err){
+                        res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                        res.write(JSON.stringify(object_to_insert));
+                        res.end('\n');
+                    });
                 });
             });
             return next();

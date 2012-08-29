@@ -9,6 +9,5 @@ exports.init=function(server){
     server.get('/spider/:site/:type',action.site);
     server.get('/spider/:site/:type/:page',action.site);
     server.get('/spider/history',action.history);
-    server.get('/mongodb/test',action.mongodbtest);
     server.get('/mongodb/:type',action.mongodb);
 }
