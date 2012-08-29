@@ -21,6 +21,31 @@ exports.mongodbtest=function(req, res, next){
     });
     return next();
 }
+exports.mongodb=function(req,res,next){                 //switch type
+  switch(req.params.type){
+          case 'get': mongodbtype.get(req,res,next);break;
+          default : res.send('request type name is:'+req.params.type);
+  }
+  return next();
+}
+var mongodbtype={
+        get:function(req, res, next){        //find all ips of collection    
+            mongodb.connect(mongourl, function(err, conn){
+                conn.collection('ips', function(err, coll){
+                         coll.find().toArray(function(err, results) {
+                                res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                                res.write(JSON.stringify(results));
+                                res.end('\n');
+                                  // test.assertEquals(1, results.length);
+                                  // test.assertTrue(results[0].a === 2);
+                                  // // Let's close the db
+                                  // client.close();
+                        });
+                });
+            });
+            return next();
+        }
+}
 /** 显示抓取url列表 **/
 exports.history=function(req, res, next){
     var file=fs.readFileSync(__dirname+ "/../www/history.html");
