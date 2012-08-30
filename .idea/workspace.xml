@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\nodejs\project\rest\hqkx\init\mongourlconfig.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/action.js" afterPath="$PROJECT_DIR$/action/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/spider.js" afterPath="$PROJECT_DIR$/action/spider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path.js" afterPath="$PROJECT_DIR$/path.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/history.html" afterPath="$PROJECT_DIR$/www/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init/mongodbConfig.js" afterPath="$PROJECT_DIR$/init/mongodbConfig.js" />
     </list>
     <ignored path="hqkx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,11 +72,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/action/mongodb/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="697" selection-end="697" vertical-scroll-proportion="0.34751773">
+            <state line="12" column="7" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongodbConfig.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/init/mongodbConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="38" selection-start="643" selection-end="643" vertical-scroll-proportion="0.57798165">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/chinese.js" />
         <option value="$PROJECT_DIR$/test/testfs.js" />
         <option value="$PROJECT_DIR$/spider.js" />
         <option value="$PROJECT_DIR$/test/testrequest.js" />
@@ -130,6 +133,7 @@
         <option value="$PROJECT_DIR$/action/spider.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/action/mongodb/index.js" />
+        <option value="$PROJECT_DIR$/init/mongodbConfig.js" />
       </list>
     </option>
   </component>
@@ -180,6 +184,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hqkx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hqkx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hqkx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="init" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,11 +512,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sh/push.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="33" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
@@ -581,8 +594,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/action/mongodb/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="697" selection-end="697" vertical-scroll-proportion="0.34751773">
+        <state line="12" column="7" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init/mongodbConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="643" selection-end="643" vertical-scroll-proportion="0.57798165">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

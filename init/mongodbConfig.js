@@ -19,15 +19,15 @@ if(process.env.VCAP_SERVICES){
         "name":"",
         "db":"db"
     };
-    var mongolab1url={
-        "hostname":"ds031617.mongolab.com",
-        "port":31617,
-        "username":"mongolab1",
-        "password":"mongolab1",
-        "name":"mongolab1",
-        "db":"mongolab1"
-            
-    }
+}
+var mongolab1url={
+    "hostname":"ds031617.mongolab.com",
+    "port":31617,
+    "username":"mongolab1",
+    "password":"mongolab1",
+    "name":"mongolab1",
+    "db":"mongolab1"
+
 }
 var generate_mongo_url = function(obj){
     obj.hostname = (obj.hostname || 'localhost');
