@@ -1,5 +1,4 @@
-var restify = require('restify');
-var path = require('./path');
+var restify = require('restify'),path = require('./path');
 
 var port = (process.env.VMC_APP_PORT || 3003);
 var host = (process.env.VCAP_APP_HOST || 'localhost');

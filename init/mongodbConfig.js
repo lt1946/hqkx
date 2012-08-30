@@ -40,5 +40,6 @@ var generate_mongo_url = function(obj){
     }
 }
 
+exports.db = require('mongodb');
 exports.mongourl = generate_mongo_url(mongo);
 exports.mongolab1url = generate_mongo_url(mongolab1url);

@@ -1,10 +1,7 @@
-var cheerio = require('cheerio');
-var request = require('request');
-var iconv = require('iconv-lite');
-var http = require("http");
+var cheerio = require('cheerio'),request = require('request'),iconv = require('iconv-lite'),http = require("http");
 
 //TODO sync get is function
-var getrealgfporn=function(){
+exports.getrealgfporn=function(){
     var options = {
         host: 'www.realgfporn.com',
         port: 80,
@@ -39,6 +36,3 @@ var getrealgfporn=function(){
     });
     req.end();
 };
-
-
-exports.getrealgfporn=getrealgfporn();
