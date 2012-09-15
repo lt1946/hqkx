@@ -1,5 +1,6 @@
 // var spider = require('./path_spider');
-var action = require('./action/action'),action_test = require('./action/action_test');
+var action = require('./action/action'),
+    action_test = require('./action/action_test'),
 
 exports.init=function(server){
     server.get('/echo/:name', echo);
@@ -9,7 +10,7 @@ exports.init=function(server){
     server.get('/mongodb/:type',action.mongodb);
     //action_test
     server.get('/test/:type',action_test.init);
-}
+}                               
 
 var echo=function (req, res, next) {
     res.send(req.params);

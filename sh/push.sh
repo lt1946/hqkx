@@ -1,2 +1,2 @@
 #!/bin/sh
-git add * && git commit -a -m "$1" && git push 
+git add * && git commit -am "$1" && git push 

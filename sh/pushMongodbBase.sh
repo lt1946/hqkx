@@ -1,2 +1,2 @@
 #!/bin/sh
-git add * && git commit -a -m "$1" && git push origin mongodbBase
+git add * && git commit -m "$1" && git push origin mongodbBase

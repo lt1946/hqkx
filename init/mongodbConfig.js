@@ -1,10 +1,3 @@
-/**
- * Created with JetBrains WebStorm.
- * User: IATBFOREVER
- * Date: 12-8-16
- * Time: 下午9:34
- * To change this template use File | Settings | File Templates.
- */
 if(process.env.VCAP_SERVICES){
     var env = JSON.parse(process.env.VCAP_SERVICES);
     console.log(JSON.stringify(env['mongodb-1.8']))
