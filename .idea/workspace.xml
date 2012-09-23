@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba5e0c4e-25fd-4795-af57-2fef7270013f" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\nodejs\project\rest\hqkx\.settings\org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="D:\nodejs\project\rest\hqkx\test\chinese.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init/mongodbConfig.js" afterPath="$PROJECT_DIR$/init/mongodbConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path.js" afterPath="$PROJECT_DIR$/path.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sh/push.sh" afterPath="$PROJECT_DIR$/sh/push.sh" />
     </list>
     <ignored path="hqkx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,25 +41,52 @@
       <file leaf-file-name="path.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="37" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+            <state line="7" column="36" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="action_test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/action_test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="47" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/mongodb/index_test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="46" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/action/action.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="41" selection-start="934" selection-end="934" vertical-scroll-proportion="1.108747">
+            <state line="23" column="14" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/history/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="55" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.15625">
+            <state line="17" column="24" selection-start="720" selection-end="727" vertical-scroll-proportion="0.66057444">
               <folding />
             </state>
           </provider>
@@ -116,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/testfs.js" />
         <option value="$PROJECT_DIR$/spider.js" />
         <option value="$PROJECT_DIR$/test/testrequest.js" />
         <option value="$PROJECT_DIR$/test/testrequest3.js" />
@@ -132,6 +157,7 @@
         <option value="$PROJECT_DIR$/action/mongodb/index.js" />
         <option value="$PROJECT_DIR$/init/mongodbConfig.js" />
         <option value="$PROJECT_DIR$/path.js" />
+        <option value="$PROJECT_DIR$/action/action_test.js" />
       </list>
     </option>
   </component>
@@ -167,16 +193,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,6 +309,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="history" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -448,7 +474,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21827412" sideWeight="0.64567524" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.16616085" sideWeight="0.4890017" order="1" side_tool="true" content_ui="tabs" x="1137" y="207" width="219" height="100" />
       <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16843702" sideWeight="0.7817259" order="0" side_tool="false" content_ui="combo" x="-1" y="86" width="219" height="592" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1676783" sideWeight="0.7817259" order="0" side_tool="false" content_ui="combo" x="-1" y="86" width="219" height="592" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19954476" sideWeight="0.7817259" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28716215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -519,21 +545,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sh/push.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cheerio/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="0" selection-end="939" vertical-scroll-proportion="-1.2093596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testrequestOK.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1118" selection-end="1128" vertical-scroll-proportion="0.6264501" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/testrequest3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="7" selection-start="54" selection-end="61" vertical-scroll-proportion="0.1600928" />
@@ -564,16 +575,34 @@
         <state line="14" column="58" selection-start="343" selection-end="343" vertical-scroll-proportion="0.040636044" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/init/mongodbConfig.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="53" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="37" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action/mongodb/index.js">
+    <entry file="file://$PROJECT_DIR$/path.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" />
+        <state line="7" column="36" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/action_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="47" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/mongodb/index_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/history/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="55" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/action/spider.js">
@@ -581,30 +610,19 @@
         <state line="20" column="71" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/action/mongodb/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init/mongodbConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="53" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.15625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="37" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/path.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="41" selection-start="934" selection-end="934" vertical-scroll-proportion="1.108747">
+        <state line="17" column="24" selection-start="720" selection-end="727" vertical-scroll-proportion="0.66057444">
           <folding />
         </state>
       </provider>

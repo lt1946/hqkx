@@ -1,6 +1,6 @@
 // var spider = require('./path_spider');
 var action = require('./action/action'),
-    action_test = require('./action/action_test'),
+    action_test = require('./action/action_test');
 
 exports.init=function(server){
     server.get('/echo/:name', echo);
