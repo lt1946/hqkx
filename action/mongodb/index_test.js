@@ -19,8 +19,8 @@ exports.getOneUrl=function(req, res, next){
     db.connect(mongolab1url, function(err, conn){
         conn.collection('urls', function(err, coll){
             coll.find({url:"url1"}, {limit:1}).toArray(function(err, results) {
-                res.setHeader("Content-Type", "text/plain; charset=UTF-8");
-                res.write(results.length+"||"+JSON.stringify(results));
+                res.setHeader("Content-Type", "application/json; charset=UTF-8");
+                res.write(JSON.stringify(results));
                 res.end('\n');
             });
         });
