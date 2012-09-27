@@ -4,6 +4,7 @@ var action = require('./action/action'),
 
 exports.init=function(server){
     server.get('/echo/:name', echo);
+    server.post('/echo2/:name', echo);
     //action
     server.get('/history',action.history_init);
     server.get('/spider/:site/:type/:page',action.site);
@@ -14,5 +15,9 @@ exports.init=function(server){
 
 var echo=function (req, res, next) {
     res.send(req.params);
+    return next();
+}
+var echo2=function (req, res, next) {
+    res.send(req.body.name);
     return next();
 }

@@ -7,9 +7,49 @@ exports.init=function(req,res,next){
             case 'realgfporn': realgfporn(req,res,next);break;
             case 'getrealgfporn': getrealgfporn(req,res,next);break;
             case 'getOneRealgfporn': getOneRealgfporn(req,res,next);break;
+            case 'getRealgfPornVideo': getRealgfPornVideo(req,res,next);break;
             default : res.send('request type name is:'+req.params.type);
         }
         return next();
+};
+var getRealgfPornVideo=function(request,response,next){
+        var page=request.params.page;
+        var options = {
+            host: 'www.realgfporn.com',
+            port: 80,
+            path: "/"+page.replace("___","/"),
+            method: 'GET'
+        };
+        console.log(JSON.stringify(options))
+        var req = http.request(options, function(res) {
+            // console.log('HEADERS: ' + JSON.stringify(res.headers.Location));
+            if(res.headers.Location==undefined&&res.statusCode==200){
+                var result = '';
+                var start=";so.addVariable('file','";
+                res.on('data', function (chunk) {
+                    var $ = cheerio.load(chunk) ;
+                    var script=$("script");
+                    script.each(function(){
+                            if(result!='')return;
+                            var data=$(this).text();
+                            var si = data.indexOf(start);
+                            if (si != -1) {
+                               result= data.substring(si+start.length,data.indexOf("'", si+start.length));
+                            }
+                            console.log(result);
+                    })
+                });
+                res.on("end",function(){
+                    response.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                    response.write(result);
+                    response.end();
+                })
+            }
+        });
+        req.on('error', function(e) {
+            console.log('problem with request: ' + e.message);
+        });
+        req.end();
 };
 var getrealgfporn=function(request,response,next){
         var page=request.params.page;
