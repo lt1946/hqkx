@@ -40,8 +40,8 @@ var getRealgfPornVideo=function(request,response,next){
                     })
                 });
                 res.on("end",function(){
-                    response.setHeader("Content-Type", "text/plain; charset=UTF-8");
-                    response.write(result);
+                    response.setHeader("Content-Type", "text/html; charset=UTF-8");
+                    response.write("<a href='"+result+"' target=_blank>"+result+"</a>");
                     response.end();
                 })
             }
@@ -105,11 +105,12 @@ var realgfporn=function(request,response,next){
                         var href=$a.attr("href");
                         var title=$a.find(".vtitle").text();
                         var imgsrc=$a.find("img").attr("src");
-                        result.push({title:title,url:href,imgsrc:imgsrc});
+                        var url="http://204.45.123.154:3003/spider/porn/getRealgfPornVideo/"+href.replace("http://www.realgfporn.com/","").replace("/","___");
+                        result.push({title:title,url:"<a href='"+url+"' target=_blank>"+url+"</a>",imgsrc:imgsrc});
                     })
                 });
                 res.on("end",function(){
-                    response.setHeader("Content-Type", "text/plain; charset=UTF-8");
+                    response.setHeader("Content-Type", "text/html; charset=UTF-8");
                     response.write(JSON.stringify(result));
                     response.end();
                 })
