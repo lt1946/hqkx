@@ -105,33 +105,35 @@ var realgfporn=function(request,response,next){
                         var href=$a.attr("href");
                         var title=$a.find(".vtitle").text();
                         var imgsrc=$a.find("img").attr("src");
-                        var url="http://204.45.123.154:3003/spider/porn/getRealgfPornVideo/"+href.replace("http://www.realgfporn.com/","").replace("/","___");
-                        result.push({title:title,url:"<a href='"+url+"' target=_blank>"+url+"</a>",imgsrc:imgsrc});
+                        // var url="http://204.45.123.154:3003/spider/porn/getRealgfPornVideo/"+href.replace("http://www.realgfporn.com/","").replace("/","___");
+                        // result.push({title:title,url:"<a href='"+url+"' target=_blank>"+url+"</a>",imgsrc:imgsrc});
+                        result.push({title:title,url:href,imgsrc:imgsrc});
                     })
                 });
                 res.on("end",function(){
                     response.setHeader("Content-Type", "text/html; charset=UTF-8");
+                   /*
                     var html="<script type=\"text/javascript\">"+
-                                 "       var a=document.getElementsByTagName(\"a\");var i=1;"+
-                               " function test(){"+
-                                 "       for ( var i = 0; i < a.length; i++) {"+
-                                  "              window.open(a[i].href);"+
-                                  "      }"+
-                                "}"+
-                               " function test2(){"+
-                                 "      setInterval(openUrl,1000);"+
-                                "}"+
-                                "function openUrl(){"+
-                                 "       if(i<a.length){"+
-                                  "              window.open(a[i].href);"+
-                                   "             i++;"+
-                                    "    }"+
-                               " }"+
-                       " </script>"+
-                               " <input type=\"button\"  onclick=\"test()\" value=\"open\">"+
-                               " <input type=\"button\"  onclick=\"test2()\" value=\"open2\">"+
-                     "<br>"+JSON.stringify(result);
-                    response.write(html);
+                                                    "       var a=document.getElementsByTagName(\"a\");var i=1;"+
+                                                  " function test(){"+
+                                                    "       for ( var i = 0; i < a.length; i++) {"+
+                                                     "              window.open(a[i].href);"+
+                                                     "      }"+
+                                                   "}"+
+                                                  " function test2(){"+
+                                                    "      setInterval(openUrl,1000);"+
+                                                   "}"+
+                                                   "function openUrl(){"+
+                                                    "       if(i<a.length){"+
+                                                     "              window.open(a[i].href);"+
+                                                      "             i++;"+
+                                                       "    }"+
+                                                  " }"+
+                                          " </script>"+
+                                                  " <input type=\"button\"  onclick=\"test()\" value=\"open\">"+
+                                                  " <input type=\"button\"  onclick=\"test2()\" value=\"open2\">"+
+                                        "<br>"+JSON.stringify(result);*/
+                    response.write(JSON.stringify(result));
                     response.end();
                 })
             }
