@@ -5,11 +5,11 @@ var action = require('./action/action'),
 exports.init=function(server){
     server.get('/echo/:name', echo);
     server.post('/echo2/:name', echo);
-    //action
+    //=========action
     server.get('/history',action.history_init);
     server.get('/spider/:site/:type/:page',action.site);
     server.get('/mongodb/:type',action.mongodb);
-    //action_test
+    //==========action_test
     server.get('/test/:type',action_test.init);
 }                               
 
